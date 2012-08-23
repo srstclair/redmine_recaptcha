@@ -40,7 +40,7 @@
 <!--[eoform:user]-->
 </div>
 
-<%= recaptcha_tags :public_key => Setting.plugin_redmine_recaptcha['recaptcha_public_key'] %>
+<%= recaptcha_tags :public_key => Setting.plugin_redmine_recaptcha['recaptcha_public_key'], :ssl => true %>
  
 <%= submit_tag l(:button_submit) %>
 <% end %>
